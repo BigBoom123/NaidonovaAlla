@@ -322,6 +322,9 @@ header {
 
 .services {
   margin-bottom: 4em;
+  display: grid;
+  grid-column-gap: 2em;
+  justify-content: space-evenly;
 }
 
 .service {
@@ -400,12 +403,15 @@ header {
 }
 
 .portfolio-items {
+  max-height: 70%;
   background: var(--clr-accent);
   overflow: hidden;
 }
 .portfolio--img {
   transition: transform 750ms cubic-bezier(0.075, 0.82, 0.165, 1),
     opacty 250ms linear;
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio--img:hover {
